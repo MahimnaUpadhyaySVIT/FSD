@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Issue | Library Management</title>
+    <link rel="stylesheet" href="./BookIssue.css" />
+  </head>
+  <body>
+    <header class="NavContainer">
+      <div class="ContentContainer">
+        <img src="./assets/library.gif" alt="Library Logo" />
+        <a href="./index.html">Library Management</a>
+      </div>
+      <nav class="Navbar">
+        <a href="bookissue.html" class="NavItem">Book Issue</a>
+        <a href="bookreturn.html" class="NavItem">Book Return</a>
+        <a href="#" class="NavItem">Library Facilities</a>
+        <a href="#" class="NavItem">About Library</a>
+      </nav>
+    </header>
+
+    <main class="FormContainer">
+      <h2>Book Issue Form</h2>
+      <form action="#" method="post">
+        <div class="FormGroup">
+          <label for="bookID">Book ID:</label>
+          <input type="text" id="bookID" name="bookID" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="bookTitle">Book Title:</label>
+          <input type="text" id="bookTitle" name="bookTitle" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="bookCategory">Book Category:</label>
+          <select id="bookCategory" name="bookCategory" required>
+            <option value="" disabled selected>Select Category</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Management">Management</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Literature">Literature</option>
+          </select>
+        </div>
+
+        <div class="FormGroup">
+          <label for="issueDate">Book Issue Date:</label>
+          <input type="date" id="issueDate" name="issueDate" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="returnDate">Book Return Date:</label>
+          <input type="date" id="returnDate" name="returnDate" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="studentID">Student ID:</label>
+          <input type="text" id="studentID" name="studentID" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" name="studentName" required />
+        </div>
+
+        <div class="FormGroup">
+          <label for="programme">Programme:</label>
+          <select id="programme" name="programme" required>
+            <option value="" disabled selected>Select Programme</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MBA">MBA</option>
+          </select>
+        </div>
+
+        <div class="FormGroup">
+          <label for="semester">Semester:</label>
+          <input
+            type="number"
+            id="semester"
+            name="semester"
+            min="1"
+            max="10"
+            required
+          />
+        </div>
+
+        <div class="FormGroup">
+          <label for="mobile">Mobile Number:</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+
+        <div class="FormGroup">
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <button type="submit" class="SubmitButton">Issue Book</button>
+      </form>
+    </main>
+
+    <footer class="FooterContainer">
+      <div class="FooterContent">
+        <div class="FooterSection">
+          <h2>Library Management</h2>
+          <p>Efficiently manage and explore your library resources.</p>
+        </div>
+
+        <div class="FooterSection">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Book Issue</a></li>
+            <li><a href="#">Book Return</a></li>
+            <li><a href="#">Library Facilities</a></li>
+            <li><a href="#">About Library</a></li>
+          </ul>
+        </div>
+
+        <div class="FooterSection">
+          <h3>Contact Us</h3>
+          <p>Email: support@library.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Location: SVIT Library</p>
+        </div>
+
+        <div class="FooterSection">
+          <h3>Follow Us</h3>
+          <div class="SocialIcons">
+            <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="FooterBottom">
+        <p>&copy; 2025 Library Management | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

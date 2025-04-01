@@ -1,0 +1,187 @@
+:root {
+    --text: #00191a;
+    --background: #f9feff;
+    --primary: #13e8fc;
+    --secondary: #fd7dae;
+    --accent: #fc984d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.NavContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary);
+}
+
+.ContentContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContentContainer img {
+    max-width: 80px;
+    height: auto;
+}
+
+.ContentContainer a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: x-large;
+}
+
+.Navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.Navbar a:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.FormContainer {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.FormContainer h2 {
+    margin-bottom: 20px;
+    color: var(--background);
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.FormGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.FormGroup input,
+.FormGroup select {
+    padding: 8px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: var(--text);
+}
+
+.SubmitButton {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.SubmitButton:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.FooterContainer {
+	background-color: var(--secondary);
+	color: var(--text);
+	padding: 30px 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .FooterContent {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+  }
+  
+  .FooterSection {
+	flex: 1;
+	min-width: 250px;
+  }
+  
+  .FooterSection h2,
+  .FooterSection h3 {
+	color: var(--background);
+	margin-bottom: 10px;
+  }
+  
+  .FooterSection ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .FooterSection ul li {
+	margin: 5px 0;
+  }
+  
+  .FooterSection ul li a {
+	text-decoration: none;
+	color: var(--text);
+	transition: color 0.3s ease;
+  }
+  
+  .FooterSection ul li a:hover {
+	color: var(--primary);
+  }
+  
+  .SocialIcons {
+	display: flex;
+	gap: 10px;
+  }
+  
+  .SocialIcons a img {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.3s ease;
+  }
+  
+  .SocialIcons a img:hover {
+	transform: scale(1.1);
+  }
+  
+  .FooterBottom {
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	padding-top: 10px;
+	border-top: 1px solid var(--accent);
+  }
+

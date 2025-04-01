@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<h1>Hello from ejs</h1><br>
+		<h2><%=data.name%> Hobbies</h2>
+		<ul>
+			<%data.hobbies.forEach((data)=>{%>
+				<li>
+					<%=data%>
+				</li>
+			<%});%>
+		</ul>
+	</body>
+</html>
